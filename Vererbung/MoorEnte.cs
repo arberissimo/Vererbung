@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Vererbung
 {
-    class MoorEnte : Tier
+    class MoorEnte : Ente
     {
         //Eigenschaften
-        public MoorEnte(String name)
+        public MoorEnte(string _name) : base(_name)
         {
-
+            Console.WriteLine(_name);
         }
         //Methoden
         public override void Quacken()

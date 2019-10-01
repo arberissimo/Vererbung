@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Vererbung
 {
-    class LockEnte : Tier
+    public class LockEnte : Ente
     {
         //Eigenschaften
-        public LockEnte(String name)
+        public LockEnte(string _name) : base(_name)
         {
-
+            Console.WriteLine(_name);
         }
         //Methoden
         public override void Quacken()

@@ -4,13 +4,14 @@ using System.Text;
 
 namespace Vererbung
 {
-    class GummiEnte : Tier
+    public class GummiEnte : Ente
     {
         //Eigenschaften
-        public GummiEnte(String name)
+        public GummiEnte(string _name) : base(_name) 
         {
-          
+            Console.WriteLine(_name);
         }
+
         //Methoden
         public override void Quacken()
         {

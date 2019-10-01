@@ -4,13 +4,14 @@ using System.Text;
 
 namespace Vererbung
 {
-    class StockEnte : Tier
+    class StockEnte : Ente
     {
         //Eigenschaften
-        public StockEnte(String name)
+        public StockEnte(string _name) : base(_name)
         {
-
+            Console.WriteLine(_name);
         }
+            
         //Methoden
         public override void Quacken()
         {
