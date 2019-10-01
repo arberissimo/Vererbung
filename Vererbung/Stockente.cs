@@ -19,7 +19,7 @@ namespace Vererbung
         }
         public override void Fliegen()
         {
-            Console.WriteLine("Fliegen mit Flügel");
+            Console.WriteLine("Fliegen mit Flügel\n");
         }
     }
 }

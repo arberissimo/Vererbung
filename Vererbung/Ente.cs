@@ -7,9 +7,14 @@ namespace Vererbung
     public class Ente
     {
         public string _name;
-        private string name;
+        public string name;
 
         public Ente(string name)
+        {
+            this.name = name;
+        }
+
+        public void SetName(string name)
         {
             this.name = name;
         }
@@ -20,9 +25,11 @@ namespace Vererbung
         }
         public virtual void Quacken()
         {
+            Console.WriteLine("Quack");
         }
         public virtual void Fliegen()
         {
+            Console.WriteLine("Fliegen mit Flügel\n");
         }
     }
 }
